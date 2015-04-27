@@ -23,7 +23,6 @@ filetype plugin indent on
 
 highlight colorcolumn ctermbg=8 ctermfg=7
 set colorcolumn=140
-let g:vimroom_width=140
 
 set exrc
 set secure
