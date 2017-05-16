@@ -5,9 +5,10 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'sjl/splice.vim'
+Plugin 'fatih/vim-go'
 
 call vundle#end()            " required
 
@@ -21,11 +22,13 @@ set smartcase
 set autowrite
 filetype plugin indent on
 
-highlight colorcolumn ctermbg=8 ctermfg=7
-set colorcolumn=140
+set colorcolumn=100
 
 set swb=usetab,newtab
 
 set exrc
 set secure
+
 colorscheme desert
+
+set completeopt-=preview
