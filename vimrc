@@ -14,6 +14,7 @@ Plug 'xolox/vim-notes'
 Plug 'majutsushi/tagbar'
 Plug 'scrooloose/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'racer-rust/vim-racer'
 
 call plug#end()            
 
@@ -68,3 +69,7 @@ let g:tagbar_type_go = {
 	\ 'ctagsargs' : '-sort -silent'
 \ }
 
+
+au FileType rust nmap gd <Plug>(rust-def)
+au FileType rust nmap <leader>gd <Plug>(rust-doc)
+au FileType go nmap <leader>gd :GoDoc<CR>
